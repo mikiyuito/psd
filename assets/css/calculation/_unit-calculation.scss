@@ -1,13 +1,17 @@
 //*数値から単位を取り除く--------------------------------
-
+//*px→rem px→em px→vwにする時に便利
 @function strip-unit($number) {
-    @if type-of($number)=='number'and not unitless($number) {
+    //*$numberのデータタイプが"number"かつ単位がある場合、単位を削除
+    //*例：$number = 30px
+    //*30px / (30px * 0 + 1 = 1px) = 30;(単位を割るとなくなる)
+    @if type-of($number)== 'number' and not unitless($number) {
         @return $number / ($number * 0 + 1);
     }
+    //*普通に数値のみの場合
     @return $number;
 }
 
-//*px→rem変換(blockの時に使う)
+//*px→rem変換(blockの時に使う)---------------------------------
 @function rem($px, $base: 16px) {
     $value: $px;
 
@@ -22,7 +26,7 @@
     @return $value;
 }
 
-//*px→em変換(elementの時に使う)
+//*px→em変換(elementの時に使う)-----------------------------------
 
 @function em($px, $base: 16px) {
     $value: $px;
@@ -38,7 +42,8 @@
     @return $value;
 }
 
-//*px→vw変換(スマホ表示の時はvwをよく使う・デスクトップの場合デメリットが多いので基本使わない)
+//*px→vw変換--------------------------------------------------------------
+//*スマホ表示の時はvwをよく使う・デスクトップの場合デメリットが多いので基本使わない)
 @function vw($px, $base: 375px) {
     $value: $px;
 
@@ -51,14 +56,4 @@
     $value: (strip-unit($px) / strip-unit($base)) * 100vw;
 
     @return $value;
-}
-
-
-//*数値から単位を取り除く--------------------------------
-@function strip-unit($number) {
-    @if type-of($number)=='number'and not unitless($number) {
-        @return $number / ($number * 0 + 1);
-    }
-
-    @return $number;
 }
