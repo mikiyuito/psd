@@ -1,2 +1,119 @@
 @import "./setting/_setting";
 
+//* ===============================================
+//*header
+//* ===============================================
+
+.header {
+    background-color: $color-white;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__title {
+    padding-left: 80px;
+    font-size: rem(36px);
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__inner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav__list {
+    margin-right: 48px;
+
+}
+
+.header-nav__contact {
+    padding: 43px 53px;
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+
+//* ===============================================
+//* first-view
+//* ===============================================
+.first-view {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.first-view__inner {
+    position: relative;
+    height: 80vh;
+}
+
+.important-post {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    width: 1300px;
+    @include z-index(header);
+    transform: translateX(-50%);
+}
+
+.important-post__list {
+    display: flex;
+    align-items: center;
+    background-color: $color-white;
+}
+
+.important-post__head {
+    padding: 39px 50px;
+    background-color: $color-blue;
+    color: $color-white;
+}
+
+.important-post__body {
+    padding-left: 30px;
+}
+
+.important-post__date {
+    margin-right: 72px;
+    color: $color-gray;
+}
+
+
+//* ===============================================
+//*strong
+//* ===============================================
+.strong {
+    position: relative;
+    margin-left: auto;
+    width: 1450px;
+    height: 768px;
+    background-color: $color-light-gray;
+}
+
+.strong__title-wrapper {
+    position: absolute;
+    top: 140px;
+    left: -239px;
+    padding-top: 80px;
+    padding-left: 77px;
+    width: 719px;
+    height: 400px;
+    background-color: $color-purple;
+    color: $color-white;
+}
+
+.strong__title {
+    padding-bottom: 38px;
+    font-size: rem(48px);
+}
+
+.strong__sub-title {
+    text-indent: .3em;
+}

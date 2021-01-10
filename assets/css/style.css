@@ -43,25 +43,15 @@ button {
   padding: 0;
 }
 
-.section {
-  margin-top: 80px;
-}
-
-@media screen and (min-width: 1400px) {
-  .section {
-    margin-top: 160px;
-  }
+.section__inner {
+  padding-top: 80px;
 }
 
 @media screen and (min-width: 1400px) {
   .section__inner {
-    margin: 0 auto;
+    margin: 0 auto 0;
     max-width: 1300px;
   }
-}
-
-.level2-heading {
-  font-family: "Noto Sans JP", sans-serif;
 }
 
 .button {
@@ -98,5 +88,110 @@ button {
 .button:focus::before, .button:hover::before {
   width: 100%;
   background-color: #fff;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  padding-left: 80px;
+  font-size: 2.25rem;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__inner {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav__list {
+  margin-right: 48px;
+}
+
+.header-nav__contact {
+  padding: 43px 53px;
+  background-color: #040865;
+  color: #fff;
+}
+
+.first-view {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.first-view__inner {
+  position: relative;
+  height: 80vh;
+}
+
+.important-post {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  width: 1300px;
+  z-index: 20;
+  transform: translateX(-50%);
+}
+
+.important-post__list {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+.important-post__head {
+  padding: 39px 50px;
+  background-color: #040865;
+  color: #fff;
+}
+
+.important-post__body {
+  padding-left: 30px;
+}
+
+.important-post__date {
+  margin-right: 72px;
+  color: #959595;
+}
+
+.strong {
+  position: relative;
+  margin-left: auto;
+  width: 1450px;
+  height: 768px;
+  background-color: #f2f2f2;
+}
+
+.strong__title-wrapper {
+  position: absolute;
+  top: 140px;
+  left: -239px;
+  padding-top: 80px;
+  padding-left: 77px;
+  width: 719px;
+  height: 400px;
+  background-color: #2a2f90;
+  color: #fff;
+}
+
+.strong__title {
+  padding-bottom: 38px;
+  font-size: 3rem;
+}
+
+.strong__sub-title {
+  text-indent: .3em;
 }
 /*# sourceMappingURL=style.css.map */
