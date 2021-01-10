@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ミキ工業 | TOP</title>
+    <title>三木工業 | TOP</title>
 
     <!-- スマホの表示に合わせてWebサイトの説明を50字以内にする-->
     <meta name="description" content="">
@@ -14,10 +14,10 @@
     <meta name="format-detection" content="telephone=no">
 
     <!-- Googleの検索結果にサムネイル画像を表示-->
-    <meta name="thumbnail" content=""/>
+    <meta name="thumbnail" content="" />
 
     <!-- ファビコン設定 type = image/png・image/gif・image/vnd.microsoft.icon -->
-    <link rel="icon" type="ファビコンの種類" href="ファビコン画像のURL">
+    <link rel="icon" type="ファビコンの種類" href="">
 
     <!--OGP設定-->
     <meta property="og:title" content="ページのタイトル">
@@ -27,7 +27,7 @@
     <meta property="og:description" content="ページのディスクリプション">
     <meta property="og:image" content="サムネイル画像のURL(パス)">
     <!-- twitter-card 大きく表示させたい  or 小さくて良い 画像の大きさは最低600px*315px -->
-    <meta name="twitter:card" content="summary_large_image  or  summary">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="TwitterのURL(フルパスで記述)">
 
     <!-- FontAwesome読み込み -->
@@ -39,6 +39,77 @@
 </head>
 
 <body>
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__title">
+                <a class="header__title-link" href="">三木工業株式会社</a>
+            </h1>
+            <nav class="header-nav" id="js-header-nav">
+                <ul class="header-nav__inner">
+                    <li class="header-nav__list">
+                        <a class="header-nav__link" href="#">当社の強み</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a class="header-nav__link" href="#">事業内容</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a class="header-nav__link" href="#">製品情報</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a class="header-nav__link" href="#">会社案内</a>
+                    </li>
+                    <li class="header-nav__list">
+                        <a class="header-nav__link" href="#">採用情報</a>
+                    </li>
+                </ul>
+                <a class="header-nav__contact" href="#">お問い合わせ</a>
+                <!-- <button class="menu-button _pc-none" id="js-menu-button">
+                    <span class="menu-button__bar menu-button__bar--top"></span>
+                    <span class="menu-button__bar menu-button__bar--middle"></span>
+                    <span class="menu-button__bar menu-button__bar--bottom"></span>
+                </button> -->
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="first-view" style="background-image: url(assets/images/fv-img.jpg);">
+            <div class="first-view__inner">
+                <ul class="important-post">
+                    <li class="important-post__list">
+                        <div class="important-post__head">
+                            <h2 class="important-post__title">重要なお知らせ</h2>
+                        </div>
+                        <div class="important-post__body">
+                            <time class="important-post__date" datetime="2021-01-10">2020/01/10</time>
+                            <a class="important-post__title" href="">ホームページを更新しました</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section class="strong section" id="strong">
+            <div class="strong__inner section__inner">
+                <div class="strong__content">
+                    <div class="strong__title-wrapper">
+                        <h2 class="strong__title">当社の強み</h2>
+                        <p class="strong__sub-title">STRENGTHS</p>
+                    </div>
+                    <div class="cards cards--col3">
+                        <div class="cards__item card">
+                            <figure class="card__img-wrapper">
+                                <img class="card__img" src="assets/images/strong1.jpg" alt="">
+                            </figure>
+                            <div class="card__body">
+                                <h3 class="card__title">タイトル</h3>
+                                <p class="card__text">テキスト</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
 
 
 
