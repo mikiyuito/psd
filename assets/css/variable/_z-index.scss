@@ -1,0 +1,13 @@
+
+//*重なり順-----------------------------------------------
+$layer: (modal: 100,
+    drawer: 40,
+    sp-menu: 35,
+    floating: 30,
+    header: 20,
+    default: 1,
+    negative: -1);
+
+@mixin z-index($key) {
+    z-index: map-get($layer, $key);
+}

@@ -1,0 +1,56 @@
+
+//*===============================================
+//*サイトの基本設定
+//*===============================================
+
+//*全体の指定----------------------------------
+*,
+::before,
+::after {
+    margin: 0;
+}
+
+//htmlの指定----------------------------------
+html {
+    box-sizing: border-box;
+}
+
+//bodyの指定----------------------------------
+body {
+    line-height: 1.2;
+    font-family: $font-main;
+    letter-spacing: .05em;
+    color: $color-black;
+}
+
+//mainの指定----------------------------------
+main {
+    overflow-x: hidden;
+}
+
+//imgの指定-----------------------------------
+img,
+svg {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+//aの指定-------------------------------------
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+//liの指定------------------------------------
+li {
+    list-style-type: none;
+}
+
+// buttonのリセット-----------------------------
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+

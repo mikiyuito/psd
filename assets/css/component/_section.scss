@@ -1,0 +1,17 @@
+.section {
+    margin-top: 80px;
+
+    //*1400px以上
+    @include responsive(xxl) {
+        margin-top: 160px;
+    }
+}
+
+.section__inner {
+
+    //*1400px以上
+    @include responsive(xxl) {
+        margin: 0 auto;
+        max-width: 1300px;
+    }
+}

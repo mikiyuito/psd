@@ -1,0 +1,38 @@
+
+.button {
+    position: relative;
+    display: inline-block;
+    width: 98px;
+    padding: 32px 100px;
+    max-width: 100%;
+    background-color: $color-blue;
+    border: 1px solid $color-white;
+    color: $color-white;
+    font-size: rem(18px);
+    text-align: center;
+    @include z-index(default);
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $color-white;
+        transition: .4s ease;
+        @include z-index(negative);
+    }
+
+    &:focus,
+    &:hover {
+        color: $color-blue;
+        border-color: currentColor;
+    }
+
+    &:focus::before,
+    &:hover::before {
+        width: 100%;
+        background-color: $color-white;
+    }
+}
